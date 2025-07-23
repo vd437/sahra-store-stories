@@ -71,7 +71,7 @@ const Products = () => {
                   </span>
                 </div>
 
-                <div className="flex space-x-3 space-x-reverse">
+                <div className="flex gap-3">
                   <Link to={`/product/${product.id}`} className="flex-1">
                     <Button variant="outline" className="w-full">
                       عرض التفاصيل
@@ -79,7 +79,7 @@ const Products = () => {
                   </Link>
                   <Button
                     onClick={() => handleQuickAdd(product)}
-                    className="story-button flex items-center space-x-2 space-x-reverse"
+                    className="story-button flex items-center gap-2"
                   >
                     <ShoppingCart className="h-4 w-4" />
                     <span>أضف للسلة</span>

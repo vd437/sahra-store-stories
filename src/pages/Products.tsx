@@ -71,15 +71,15 @@ const Products = () => {
                   </span>
                 </div>
 
-                <div className="flex gap-3">
-                  <Link to={`/product/${product.id}`} className="flex-1">
+                <div className="flex flex-col gap-3">
+                  <Link to={`/product/${product.id}`}>
                     <Button variant="outline" className="w-full">
                       عرض التفاصيل
                     </Button>
                   </Link>
                   <Button
                     onClick={() => handleQuickAdd(product)}
-                    className="story-button flex items-center gap-2"
+                    className="story-button w-full flex items-center justify-center gap-2"
                   >
                     <ShoppingCart className="h-4 w-4" />
                     <span>أضف للسلة</span>
